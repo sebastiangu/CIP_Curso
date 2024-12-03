@@ -34,4 +34,17 @@ ej: Para aprovechar la temporada alta, deberíamos lanzar promociones y aumentar
 6.descriptiva
 7.diagnostica
 -------------------------------------------
+a = 4 + 8 / 2 - 3 
+print("a)",a)
 
+b = 19 + (22 - 8 * 2) - 3
+print("b)",b)
+
+c = 5 - 4 + 2 * (2 - 1) + 9
+print("c)", c) 
+
+d = 2 + 6 * (2 * 5) - 10 / 2
+print("d)", d)
+
+e = 20 + (5 - 60 / 3 + 2 * (4 - 3))
+print("e)", e)
