@@ -1,0 +1,29 @@
+dato : se podría considerar a hechos información valor,quiere decir que no tiene un significado
+
+información : la información es la manera de procesar datos 
+
+conocimiento: interpretación de una información 
+
+----------------------------------------------------------
+
+tipos de datos:
+
+Analítica Descriptiva
+Cuando uso analítica descriptiva, simplemente miro hacia atrás. Me pregunto: ¿qué pasó? Analizo datos históricos y los resumo para entender cómo fueron las cosas. 
+Por ejemplo, reviso las ventas de mi tienda la semana pasada y descubro que los sábados son los días más exitosos.
+
+analítica diagnostica:
+
+Responde a por qué pasó algo. Se utiliza para encontrar causas y relaciones en los datos.
+
+Las ventas bajaron porque hubo problemas de inventario o un aumento en los precios
+
+analítica predictiva:
+Es como una bola de cristal basada en datos. Predice qué podría pasar en el futuro usando modelos matemáticos y estadísticas.ej
+Las ventas subirán un 20% el próximo mes porque es temporada alta
+
+analítica prescriptiva
+Responde a qué deberíamos hacer para lograr un objetivo o solucionar un problema. Sugiere decisiones basadas en datos y simulaciones.
+ej: Para aprovechar la temporada alta, deberíamos lanzar promociones y aumentar el inventario
+---------------------------------------------------------------------------------------------------
+
