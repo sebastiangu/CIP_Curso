@@ -199,9 +199,63 @@ array_basico[2:]
 array_basico([100, 100, 3, 4, 5])
 
 array_basico[]
+--------------------------------------------
 
+import numpy as np
 
+basico_multi = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+basico_multi
+--------------------------------------------------
 
+import numpy as np
 
+array = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+array
+-----------------------------------------------------------
+import numpy as np
 
+array = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+array
+----------------------------------------------------------------
 
+import numpy as np
+
+array = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+array
+
+array[:3, 3:]
+
+------------------------------------------------------------------------------
+
+import numpy as np
+
+array = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+array.sum(axis=1)
+
+array[:3, 3:]
+---------------------------------------------------------------------------------
+import pandas as pd
+
+football_dicc = {
+    "player" : ["Lionel Messi", "Cristiano Ronaldo"],
+    "year" : [2016, 2016],
+    "goals" : [37, 25],
+
+  }
+---------------------------------------------------------------------------------------------
+from os import path
+from google.colab import drive
+drive.mount('/content/drive/')
+
+import numpy as np
+import pandas as pd
+
+import plotly.express as px
+
+path_file = "/content/drive/MyDrive/california_housing_test.csv"
+df = pd.read_csv(path_file, sep=",", header=0)
+print(df.sample())
+-------------------------------------------------------------------------------------
+df.columns
+--------------------------------------------------
+df['longitude'].()
