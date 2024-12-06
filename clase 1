@@ -48,3 +48,160 @@ print("d)", d)
 
 e = 20 + (5 - 60 / 3 + 2 * (4 - 3))
 print("e)", e)
+----------------------------------------------------------------------------------------------------------------
+ejercicio 1: Escribe un programa que clasifique a una persona en diferentes grupos segun su edad y la primera letra de su nombre.
+
+-si la persona tiene menos de 18 años y su nombre comienza con una vocal
+(A,E,I,O,U), pertenece al grupo 1.
+-si la persona tiene 18 años o mas y su nombre comienza con una consonante ,pertenece al grupo 2
+-si no cumple ninguna de las condiciones anteriores al grupo 3.
+def persona():
+
+  nombre = input("ingrese el nombre de la persona: ")
+  edad = int(input("ingrese la edad de la persona: "))
+
+  letra = nombre[0].upper()
+
+  if edad < 18 and letra in "AEIOU":
+    grupo = 1
+  elif edad >= 18 and letra not in "AEIOU":
+    grupo = 2
+  else:
+    grupo = 3
+
+  print(f"la persona pertenece al grupo tal {grupo}")
+
+persona()
+
+-------------------------------------------------------------------------------------------------------------------
+ejercicio 2:Escribe un programa que determine el grupo al que pertenece una persona segun su pais de origen
+y la longitud de su nombre 
+.si la persona es de colombia y su nombre tiene menos de 5 caracteres. pertenece al grupo Colombia A 
+.si es de Mexico y su nombre tiene 5 o mas caracteres,pertenece al grupo Mexico B.
+.si la persona no es de Colombia ni de Mexico.pertenece al grupo otros.
+
+pais = input("Ingrese el origen del país: ")
+nombre = input("Ingrese el nombre: ")
+
+numero_letras = len(nombre)
+pais_origen = pais.lower()
+
+if pais_origen == "colombia" and numero_letras < 5:
+    grupo = "Colombia A"
+elif pais_origen == "méxico" and numero_letras >= 5:
+    grupo = "México B"
+else:
+    grupo = "Otros"
+
+print(f"Pertenece al grupo: {grupo}")
+----------------------------------------------------------------------------------------------------------------------
+
+ejercicio 3: Una persona otorga una calificacion a los proyectos desarrollados por sus empleados en funcion de la puntuacion 
+obtenida al final del año. Las puntuaciones posibles son 1.0, 1.5,  2.0 o mas. segun la puntuacion,, se asigna un nivel (bajo,
+medio, alto, exelente) y un bono. La empresa paga una cantidad de dinero proporcional a la puntuacion obtenidam, multiplicada por 
+3 millones.
+
+puntuacion = float(input("Ingrese la puntuación del proyecto: "))
+
+bono = puntuacion * 3
+
+if puntuacion <= 1.0:
+    nivel = "bajo"
+elif puntuacion <= 1.5:
+    nivel = "medio"
+elif puntuacion <= 2.0:
+    nivel = "alto"
+else:
+    nivel = "excelente"
+
+print(f"Nivel: {nivel}")
+print(f"Bono: {bono} millones")
+
+------------------------------------------------------------------------------------------------------------------
+ejercicio 4:
+
+
+productos = {}  
+
+while True:
+    print("\nMenú del Sistema de Gestión de Productos:")
+    print("1. Agregar un nuevo producto")
+    print("2. Eliminar un producto")
+    print("3. Actualizar cantidad y precio de un producto")
+    print("4. Mostrar productos por agotarse")
+    print("5. Salir")
+
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+        nombre = input("Ingrese el nombre del producto: ")
+        cantidad = int(input("Ingrese la cantidad del producto: "))
+        precio = float(input("Ingrese el precio del producto: "))
+        productos[nombre] = {"cantidad": cantidad, "precio": precio}
+        print(f"Producto '{nombre}' agregado correctamente.")
+
+    elif opcion == "2":
+        
+        nombre = input("Ingrese el nombre del producto a eliminar: ")
+        if nombre in productos:
+            del productos[nombre]
+            print(f"Producto '{nombre}' eliminado correctamente.")
+        else:
+            print(f"El producto '{nombre}' no existe.")
+
+    elif opcion == "3":
+        nombre = input("Ingrese el nombre del producto a actualizar: ")
+        if nombre in productos:
+            cantidad = int(input("Ingrese la nueva cantidad del producto: "))
+            precio = float(input("Ingrese el nuevo precio del producto: "))
+            productos[nombre]["cantidad"] = cantidad
+            productos[nombre]["precio"] = precio
+            print(f"Producto '{nombre}' actualizado correctamente.")
+        else:
+            print(f"El producto '{nombre}' no existe.")
+
+    elif opcion == "4":
+        print("\nProductos por agotarse (cantidad < 5):")
+        for nombre, datos in productos.items():
+            if datos["cantidad"] < 5:
+                print(f"- {nombre}: {datos['cantidad']} unidades")
+        print("No hay más productos por mostrar.")
+
+    elif opcion == "5":
+        # Salir del programa
+        print("Saliendo del sistema. ¡Adiós!")
+        break
+
+    else:
+        print("Opción inválida, intente de nuevo.")
+
+
+----------------------------------------------------------------------------------------------------------
+libreria numpy & pandas
+
+
+import numpy as np
+
+array_basico = np.array([1, 2, 3, 4, 5])
+array_basico
+
+array_basico[0] = array_basico[0]*2.5
+array_basico[0]
+
+print(array_basico.max())
+
+print(array_basico.min())
+
+print(array_basico.sum())
+
+array_basico[2:]
+
+array_basico([100, 100, 3, 4, 5])
+
+array_basico[]
+
+
+
+
+
+
